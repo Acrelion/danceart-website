@@ -1,55 +1,32 @@
-/*
- * Globals
- */
-
 body {
   color: #4a4a4a;
   padding: 0px;
-}
-
-/* h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
-} */
-
-
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+  height: 100%;
 }
 
 
-
-
-
-/* Active state gets a caret at the bottom */
-.navbar .active {
-  color: #fff;
+section.row {
+  min-height: 70vh;
+  max-height: 100%;
 }
-.navbar .active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -5px;
-  vertical-align: middle;
-  content: " ";
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid;
-  border-left: 5px solid transparent;
+
+.carousel-item {
+  height: 97vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+  text-shadow: 4px 4px 11px rgba(0, 0, 0, 1);
+  background-color: rgba(0,0,0,0.02);
+}
+
+.section-colorer-1 {
+  background-color: rgba(28, 138, 67, 0.1);
 }
 
 
@@ -58,7 +35,6 @@ h6, .h6 {
  */
 
 .blog-header {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 .blog-title {
@@ -77,9 +53,12 @@ h6, .h6 {
  * Main column and sidebar layout
  */
 
-.blog-main {
+.content-main {
   font-size: 18px;
   line-height: 1.5;
+  text-align: justify;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -90,7 +69,7 @@ h6, .h6 {
 .blog-post {
   margin-bottom: 60px;
 }
-.blog-post-title {
+.section-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
@@ -113,4 +92,34 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+footer {
+  padding-top: 50px;
+}
+
+i.fa {
+  color: rgba(28, 138, 67, 0.4);
+}
+
+#to-top {
+  font-size: 1em;
+  position: fixed;
+  right: 9px;
+  bottom: 10px;
+  display: none;
+  padding: 15px 20px;
+  background-color: rgba(28, 138, 67, 0.3);
+}
+
+.btn-light {
+  color: #333;
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #333;
+  background-color: rgba(255, 255, 255, .8);
 }
